@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/svg/logo.svg'
 function Logo() {
   return (
     <div>
