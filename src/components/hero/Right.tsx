@@ -1,4 +1,4 @@
-import hero from '../../assets/data/hero.json'
+import data from '../../assets/data/hero.json'
 import lady3 from '../../assets/image/lady3.png'
 import profile1 from '../../assets/image/profile1.png'
 
@@ -10,9 +10,9 @@ function ActionButton() {
                     <img src={profile1} />
                     <div>
                         <h3 className="font-semibold text-xs">
-                            {hero[1].title}
+                            {data[1].title}
                         </h3>
-                        <p className="text-[10px]">{hero[1].subtitle}</p>
+                        <p className="text-[10px]">{data[1].subtitle}</p>
                     </div>
                 </div>
                 <div className="flex justify-center mt-1.5">
