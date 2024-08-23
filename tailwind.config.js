@@ -6,8 +6,11 @@ export default {
             colors: {
                 primary: '#245D51',
                 secondary: '#CB8461',
-                text: '#2C2C2C',
-            }
+                text: {
+                    '50': '#808080',
+                    '100': '#2C2C2C'
+                }
+            },
         },
     },
     plugins: [],

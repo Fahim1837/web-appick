@@ -1,6 +1,6 @@
-import Button from "./Button"
-import Logo from "./Logo"
-import Navbar from "./Navbar"
+import Button from './Button'
+import Logo from './Logo'
+import Navbar from './Navbar'
 
 function Header() {
     return (
@@ -8,7 +8,6 @@ function Header() {
             <Logo />
             <Navbar />
             <Button />
-
         </div>
     )
 }
