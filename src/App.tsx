@@ -1,4 +1,5 @@
 import About from './components/about'
+import Footer from './components/footer'
 import Header from './components/header'
 import Hero from './components/hero'
 import Join from './components/join'
@@ -16,7 +17,7 @@ function App() {
             <Profile />
             <About />
             <Join />
-            <div className="mb-56" />
+            <Footer />
         </div>
     )
 }

@@ -5,7 +5,7 @@ import icon4 from '../../assets/image/icon4.png'
 import line from '../../assets/svg/line2.svg'
 
 interface Props {
-    icon: string,
+    icon: string
     text: string
 }
 
@@ -17,21 +17,21 @@ const about = {
     card: [
         {
             icon: icon1,
-            text: '15K People Join'
+            text: '15K People Join',
         },
         {
             icon: icon2,
-            text: 'Trusted Mentor'
+            text: 'Trusted Mentor',
         },
         {
             icon: icon3,
-            text: '30+ Free Videos'
+            text: '30+ Free Videos',
         },
         {
             icon: icon4,
-            text: '100+ Premium Videos'
-        }
-    ]
+            text: '100+ Premium Videos',
+        },
+    ],
 }
 
 function Card({ icon, text }: Props) {
@@ -50,13 +50,18 @@ function Right() {
             <div>
                 <h2 className="font-bold text-5xl text-text-100 leading-normal">
                     {about.title[0]}
-                    <span className='font-bold text-5xl text-primary'>{about.title[1]}</span>
+                    <span className="font-bold text-5xl text-primary">
+                        {about.title[1]}
+                    </span>
                 </h2>
-                <img src={about.curve} className="absolute top-[60px] right-[40px]" />
-                <p className='mt-9'>{about.para1}</p>
-                <p className='mt-6'>{about.para2}</p>
+                <img
+                    src={about.curve}
+                    className="absolute top-[60px] right-[40px]"
+                />
+                <p className="mt-9">{about.para1}</p>
+                <p className="mt-6">{about.para2}</p>
             </div>
-            <div className='mt-9 grid grid-cols-2 gap-x-[106px] gap-y-[30px]'>
+            <div className="mt-9 grid grid-cols-2 gap-x-[106px] gap-y-[30px]">
                 {about.card.map((item, index) => (
                     <Card key={index} icon={item.icon} text={item.text} />
                 ))}

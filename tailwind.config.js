@@ -4,15 +4,15 @@ export default {
     theme: {
         extend: {
             spacing: {
-                15: '3.75',  /* 60px */
-                25: '6.25rem'  /* 100px */
+                15: '3.75rem' /* 60px */,
+                25: '6.25rem' /* 100px */,
             },
             colors: {
                 primary: '#245D51',
                 secondary: '#CB8461',
                 text: {
-                      0: '#F2E7DB',
-                     50: '#808080',
+                    0: '#F2E7DB',
+                    50: '#808080',
                     100: '#2C2C2C',
                 },
             },
