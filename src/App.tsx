@@ -1,6 +1,7 @@
 import Header from './components/header'
 import Hero from './components/hero'
 import Media from './components/media'
+import Profile from './components/profile'
 import Subscribe from './components/subscribe'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
             <Hero />
             <Media />
             <Subscribe />
+            <Profile />
             <div className="mb-56" />
         </div>
     )
