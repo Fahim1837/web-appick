@@ -1,5 +1,6 @@
 import cube from '../../assets/svg/cube.svg'
 import ornamen from '../../assets/svg/ornamen.svg'
+import CardGroup from './CardGroup'
 
 const data = {
     title: 'Popular courses of the week',
@@ -22,6 +23,9 @@ function Product() {
             <div>
                 <img src={cube} alt="Cube" />
                 <img src={ornamen} alt="Ornamen" />
+            </div>
+            <div className='px-20 pt-[50px] pb-[75px]'>
+                <CardGroup />
             </div>
         </div>
     )
