@@ -1,28 +1,16 @@
-import About from './components/about'
+import { Route, Routes } from 'react-router-dom'
 import Footer from './components/footer'
 import Header from './components/header'
-import Hero from './components/hero'
-import Join from './components/join'
-import Media from './components/media'
-import Price from './components/price'
-import Product from './components/product'
-import Profile from './components/profile'
-import Subscribe from './components/subscribe'
-import Testimoni from './components/testimony'
+
+import Home from './pages/Home'
 
 function App() {
     return (
         <div className="app">
             <Header />
-            <Hero />
-            <Media />
-            <Subscribe />
-            <Profile />
-            <Product />
-            <About />
-            <Join />
-            <Price />
-            <Testimoni />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
             <Footer />
         </div>
     )

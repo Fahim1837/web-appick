@@ -6,7 +6,7 @@ import Price from '../components/price'
 import Product from '../components/product'
 import Profile from '../components/profile'
 import Subscribe from '../components/subscribe'
-import Testimoni from './Testimoni'
+import Testimoni from '../components/testimony'
 
 function Home() {
     return (

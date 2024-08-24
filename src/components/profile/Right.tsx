@@ -54,9 +54,8 @@ function Right() {
     return (
         <div className="grid grid-cols-2 gap-y-15 gap-x-14">
             {material.map((item, index) => (
-                <div>
+                <div key={index}>
                     <Material
-                        key={index}
                         icon={item.icon}
                         title={item.title}
                         subtitle={item.subtitle}

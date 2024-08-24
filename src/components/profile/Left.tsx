@@ -22,8 +22,8 @@ const profile = {
 function Summary() {
     return (
         <div className="flex gap-16">
-            {profile.summary.map((item) => (
-                <div>
+            {profile.summary.map((item, index) => (
+                <div key={index}>
                     <h4 className="font-bold text-3xl text-text-100 leading-normal">
                         {item.num}
                     </h4>
