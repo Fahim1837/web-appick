@@ -49,7 +49,6 @@ function Card({ styles, card, index, handleClick }: CardProps) {
         <div
             className={styles.div1}
             onClick={() => {
-                console.log(index)
                 handleClick(index)
             }}
         >

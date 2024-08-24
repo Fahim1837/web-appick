@@ -156,7 +156,6 @@ function CardGroup() {
         setIsActive(() => {
             const newStates = [false, false, false]
             newStates[index] = true
-            console.log(newStates)
             return newStates
         })
     }

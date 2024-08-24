@@ -19,10 +19,10 @@ function Product() {
                     {data.subtitle}
                 </p>
             </div>
-            <div></div>
-            <div>
-                <img src={cube} alt="Cube" />
-                <img src={ornamen} alt="Ornamen" />
+            
+            <div className='relative'>
+                <img src={cube} alt="Cube" className='absolute left-32 bottom-16'/>
+                <img src={ornamen} alt="Ornamen" className='absolute right-20 bottom-24'/>
             </div>
             <div className='px-20 pt-[50px] pb-[75px]'>
                 <CardGroup />
