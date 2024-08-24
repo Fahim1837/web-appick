@@ -34,8 +34,7 @@ const data = [
                 icon: check2,
                 text: 'Download material',
             },
-
-        ]
+        ],
     },
     {
         price: '$100 ',
@@ -64,8 +63,7 @@ const data = [
                 icon: check1,
                 text: 'Download material',
             },
-
-        ]
+        ],
     },
     {
         price: '$200 ',
@@ -94,14 +92,13 @@ const data = [
                 icon: check2,
                 text: 'Download material',
             },
-
-        ]
-    }
+        ],
+    },
 ]
 
 function Checks({ icon, text }: Props) {
     return (
-        <div className='flex gap-1'>
+        <div className="flex gap-1">
             <img src={icon} />
             <p>{text}</p>
         </div>
@@ -109,96 +106,92 @@ function Checks({ icon, text }: Props) {
 }
 
 interface Styles {
-    div1: string,
-    div2: string,
+    div1: string
+    div2: string
     popularity: {
-        div1: string,
+        div1: string
         div2: string
-    },
+    }
     price: {
-        h3: string,
-        span: string
-    },
-    cat: {
-        div: string,
         h3: string
-    },
+        span: string
+    }
+    cat: {
+        div: string
+        h3: string
+    }
     desc: {
         div: string
-    },
+    }
     listing: {
         div: string
-    },
+    }
     button: {
-        div: string,
+        div: string
         button: string
     }
 }
 
-export function Card (styles:Styles) {
+export function Card(styles: Styles) {
     return (
-        <div className='mt-[50px] flex gap-16'>
+        <div className="mt-[50px] flex gap-16">
             {data.map((card, index) => (
-                <div key={index} className= {styles.div1}>
+                <div key={index} className={styles.div1}>
+                    {/* MOST POPULAR */}
+                    {card.popularity && (
+                        <div className={styles.popularity.div1}>
+                            <div className={styles.popularity.div2}>
+                                {card.popularity}
+                            </div>
+                        </div>
+                    )}
 
-                {/* MOST POPULAR */}
-                {card.popularity && <div className={styles.popularity.div1}>
-                    <div className= {styles.popularity.div2}>
-                        {card.popularity}
-                    </div>
-                </div>}
-    
-                <div className= {styles.div2}>
-                    {/* PRICE & TIME */}
-                    <div>
-                        <h3 className= {styles.price.h3}>
-                            {card.price}
-                            <span className= {styles.price.span}>{card.time}</span>
-                        </h3>
-                    </div>
-    
-                    {/* CATEGORY */}
-                    <div className= {styles.cat.div}>
-                        <h3 className= {styles.cat.h3}>{card.cat}</h3>
-                    </div>
-    
-                    {/* DESCRIPTION */}
-                    <div className= {styles.desc.div}>
-                        <p>{card.sub}</p>
-                    </div>
-    
-                    {/* LISTING */}
-                    <div className= {styles.listing.div}>
-                        {card.listing.map((item, index) => (
-                            <Checks key={index} icon={item.icon} text={item.text} />
-                        ))}
-                    </div>
-    
-                    {/* BUTTON */}
-                    <div className= {styles.button.div}>
-                        <button className= {styles.button.button}>
-                            Choose Plan
-                        </button>
+                    <div className={styles.div2}>
+                        {/* PRICE & TIME */}
+                        <div>
+                            <h3 className={styles.price.h3}>
+                                {card.price}
+                                <span className={styles.price.span}>
+                                    {card.time}
+                                </span>
+                            </h3>
+                        </div>
+
+                        {/* CATEGORY */}
+                        <div className={styles.cat.div}>
+                            <h3 className={styles.cat.h3}>{card.cat}</h3>
+                        </div>
+
+                        {/* DESCRIPTION */}
+                        <div className={styles.desc.div}>
+                            <p>{card.sub}</p>
+                        </div>
+
+                        {/* LISTING */}
+                        <div className={styles.listing.div}>
+                            {card.listing.map((item, index) => (
+                                <Checks
+                                    key={index}
+                                    icon={item.icon}
+                                    text={item.text}
+                                />
+                            ))}
+                        </div>
+
+                        {/* BUTTON */}
+                        <div className={styles.button.div}>
+                            <button className={styles.button.button}>
+                                Choose Plan
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
             ))}
         </div>
     )
 }
 
-
 export default Card
-
-
-
-
-
-
-
-
-
-
 
 // function Card() {
 //     return (
