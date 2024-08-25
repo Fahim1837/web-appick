@@ -17,7 +17,7 @@ function Home() {
             <Media />
             {!isMobile && <Subscribe />}
             <Profile />
-            <Product />
+            {!isMobile && <Product />}
             <About />
             <Join />
             <Price />
