@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
 import menu from '../../assets/svg/menu_bar.svg'
-import Navbar from './Navbar'
 import { useState } from 'react'
 function Button1() {
     const navigate = useNavigate()

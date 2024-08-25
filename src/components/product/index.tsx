@@ -25,7 +25,7 @@ function Product() {
                 <img src={ornamen} alt="Ornamen" className='absolute right-20 bottom-24'/>
             </div>
             <div className='px-20 pt-[50px] pb-[75px]'>
-                <CardGroup />
+                   <CardGroup />
             </div>
         </div>
     )

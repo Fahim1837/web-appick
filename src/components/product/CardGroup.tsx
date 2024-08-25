@@ -6,6 +6,7 @@ import video1 from '../../assets/image/video_1.png'
 import video2 from '../../assets/image/video_2.png'
 import video3 from '../../assets/image/video_3.png'
 import Card from './Card'
+// import Slider from 'react-slick'
 
 const data = [
     {
@@ -57,14 +58,23 @@ const data = [
         per: '/20 Video'
     }
 ]
+
+// const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//   };
+
 function CardGroup() {
-  return (
-    <div className='flex gap-5'>
-        {data.map((item, index) => (
-            <Card key={index} {...item}/>
-        ))}
-    </div>
-  )
+    return (
+        <div className='flex gap-5'>
+                {data.map((item, index) => (
+                    <Card key={index} {...item} />
+                ))}
+        </div>
+    )
 }
 
 export default CardGroup
