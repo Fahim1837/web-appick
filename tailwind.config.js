@@ -4,8 +4,8 @@ export default {
     theme: {
         extend: {
             screens: {
-                "sm": { max: "640px" },
-                // => @media (max-width: 1535px) { ... }
+                "sm": { max: "450px" },
+                // => @media (max-width: 450px) { ... }
             },
             spacing: {
                 15: '3.75rem' /* 60px */,

@@ -51,15 +51,15 @@ function Card() {
 }
 function Left() {
     return (
-        <div>
-            <div className="mb-[30px]">
+        <div className='sm:flex sm:flex-col sm:items-center'>
+            <div className="mb-[30px] sm:text-center">
                 <h2 className="font-semibold text-4xl text-text-100 mb-5">
                     {profile.title[0]}
                     <span className="font-semibold text-4xl text-secondary">
                         {profile.title[1]}
                     </span>
                 </h2>
-                <p className="text-text-50 w-[434px]">{profile.subtitle}</p>
+                <p className="text-text-50 w-[434px] sm:w-[340px] sm:text-xs sm:leading-7">{profile.subtitle}</p>
             </div>
 
             <Card />

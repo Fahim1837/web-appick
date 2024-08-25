@@ -38,10 +38,10 @@ const material = [
 
 function Material({ icon, title, subtitle }: Props) {
     return (
-        <div>
+        <div className='sm:flex sm:flex-col sm:items-center sm:text-center'>
             <img src={icon} alt="Icon" />
             <div className="mt-[30px]">
-                <h3 className="text-text-100 font-semibold text-2xl w-max">
+                <h3 className="text-text-100 font-semibold text-2xl w-max sm:w-full">
                     {title}
                 </h3>
                 <p className="text-text-50 leading-7">{subtitle}</p>
@@ -52,7 +52,7 @@ function Material({ icon, title, subtitle }: Props) {
 
 function Right() {
     return (
-        <div className="grid grid-cols-2 gap-y-15 gap-x-14">
+        <div className="grid grid-cols-2 gap-y-15 gap-x-14 sm:grid-cols-1">
             {material.map((item, index) => (
                 <div key={index}>
                     <Material

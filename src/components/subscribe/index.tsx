@@ -1,6 +1,10 @@
-import data from '../../assets/data/subscribe.json'
 import bg from '../../assets/image/discount_bg.png'
 import boy1 from '../../assets/image/boy1.png'
+
+const data = {
+    "title": ["Happy ", "Chinese New Year", ", 20% discount for you today"],
+    "button": "Subscribe Now"
+}
 
 interface Props {
     className: string

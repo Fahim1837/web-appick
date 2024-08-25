@@ -7,13 +7,15 @@ import Product from '../components/product'
 import Profile from '../components/profile'
 import Subscribe from '../components/subscribe'
 import Testimoni from '../components/testimony'
+import useWindowDimensions from '../hooks/useWindowDimension'
 
 function Home() {
+    const isMobile = useWindowDimensions()
     return (
         <div>
             <Hero />
             <Media />
-            <Subscribe />
+            {!isMobile && <Subscribe />}
             <Profile />
             <Product />
             <About />
