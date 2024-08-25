@@ -37,7 +37,7 @@ function Join() {
                 <img
                     src={curve2}
                     alt="Cube"
-                    className="absolute bottom-[-20px] right-[40%]"
+                    className="absolute bottom-[-20px] right-[40%] sm:bottom-[30%] sm:right-[-5%] sm:size-7"
                 />
             </div>
         </div>

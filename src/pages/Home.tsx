@@ -1,4 +1,5 @@
 import About from '../components/about'
+import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Join from '../components/join'
 import Media from '../components/media'
@@ -21,7 +22,8 @@ function Home() {
             <About />
             <Join />
             <Price />
-            <Testimoni />
+            {!isMobile && <Testimoni />}
+            <Footer />
         </div>
     )
 }

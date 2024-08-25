@@ -161,7 +161,7 @@ function CardGroup() {
     }
 
     return (
-        <div className="mt-[50px] flex gap-16">
+        <div className="mt-[50px] flex gap-16 sm:flex-col sm:gap-[50px]">
             {data.map((item, index) => (
                 <Card
                     styles={isActive[index] ? styles.active : styles.inactive}
