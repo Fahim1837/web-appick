@@ -3,6 +3,10 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            screens: {
+                "sm": { max: "640px" },
+                // => @media (max-width: 1535px) { ... }
+            },
             spacing: {
                 15: '3.75rem' /* 60px */,
                 25: '6.25rem' /* 100px */,

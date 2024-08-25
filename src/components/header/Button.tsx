@@ -1,4 +1,5 @@
-function Button() {
+import menu from '../../assets/svg/menu_bar.svg'
+function Button1() {
     return (
         <nav className="flex gap-[20px] list-none items-center text-white">
             <li>Login</li>
@@ -9,4 +10,12 @@ function Button() {
     )
 }
 
-export default Button
+export function Button2() {
+    return (
+            <button className="py-2 rounded-lg">
+                <img src= {menu} alt="Menu" />
+            </button>
+    )
+}
+
+export default Button1
