@@ -1,11 +1,13 @@
+import useWindowDimensions from '../../hooks/useWindowDimension'
 import Left from './Left'
 import Right from './Right'
 
 function Hero() {
+    const isMobile = useWindowDimensions()
     return (
-        <div className="flex bg-primary">
+        <div className="flex bg-primary sm:text-center">
             <Left />
-            <Right />
+            {!isMobile && <Right />}
         </div>
     )
 }

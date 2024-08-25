@@ -17,7 +17,7 @@ function useWindowDimensions() {
         return () => window.removeEventListener('resize', handleResize)
     }, [])
     
-    const isMobile = windowDimensions.width <= 640 ? true : false
+    const isMobile = windowDimensions.width <= 450 ? true : false
     return isMobile
 }
 
